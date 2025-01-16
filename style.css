@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #ff7eb3, #ff758c, #ff9190);
+    color: #fff;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.reveal-btn {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    color: #ff758c;
+    background-color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.reveal-btn:hover {
+    transform: scale(1.1);
+    background-color: #ffebf0;
+}
+
+.hidden-message {
+    display: none;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out;
+}
+
+.hidden-message h2 {
+    font-size: 3rem;
+}
+
+.hidden-message p {
+    font-size: 1.2rem;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
